@@ -76,6 +76,12 @@ class MainCategories : AppCompatActivity() {
                 super.onScrolled(recyclerView, dx, dy)
             }
         })
+        setSupportActionBar(toolbar)
+        val actionBar = supportActionBar
+
+
+        actionBar!!.setDisplayHomeAsUpEnabled(true)
+        actionBar.setDisplayHomeAsUpEnabled(true)
 
 
 //        b1.setOnClickListener(){
@@ -95,6 +101,11 @@ class MainCategories : AppCompatActivity() {
 //            }
 //            mAlertDialog.show()
 //        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
 
