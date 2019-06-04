@@ -40,7 +40,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        binding.products = TextModel("สินค้าที่มีการซื้อ/ขายล่าสุด","เสนอซื้อสินค้า","เสนอขายสินค้า")
+        binding.products = TextModel("สินค้าที่มีการซื้อ/ขายล่าสุด","เสนอซื้อสินค้า","เสนอขายสินค้า","ค้นหา","ยางรถยนต์",
+            "ส่วนบุคคล/SUV","ยางรถกระบะ", "/รถตู้", "ยางรถบรรทุก", "6 ล้อ", "ยางรถบรรทุก", "10 ล้อ")
 
 
         viewPager = findViewById<View>(R.id.banner) as ViewPager
@@ -217,7 +218,7 @@ class MainActivity : AppCompatActivity() {
             }
             isLoading = false
             progressBar.visibility = View.GONE
-        },5000)
+        },3000)
     }
 
 

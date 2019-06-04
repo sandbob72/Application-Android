@@ -46,6 +46,7 @@ class RecyclerViewAdapter (private val context: Context, val activity: MainActiv
         fun bind(context: Context,p1: Int){
             binding.datarow = TextRowModel("BFGoodrich","215/45 R17 91V","Advantage T/A Drive","จำนวนคงเหลือ 100")
             binding.text5.text = "4,090.-"
+            binding.btn1.text = "สั่งซื้อสินค้า"
 
             binding.btn1.setOnClickListener({
                 val mAlertDialog = AlertDialog.Builder(context)

@@ -84,7 +84,7 @@
                         android:textColor="@color/colorRed"
                         android:text="TextView"/>
                 <Button
-                        android:text="สั่งซื้อสินค้า"
+                        android:text="Button"
                         android:textColor="@color/colorWhite"
                         android:drawableLeft="@drawable/buy"
                         android:id="@+id/btn1"

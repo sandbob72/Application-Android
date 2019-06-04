@@ -97,6 +97,7 @@ class MainCategories : AppCompatActivity() {
 //        }
     }
 
+
     fun getPage() {
         isLoading = true
         progressBar.visibility = View.VISIBLE

@@ -61,6 +61,7 @@ class CustomViewHolder(val binding: RowMain2Binding): RecyclerView.ViewHolder(bi
         binding.text3.text = "Advantage T/A Drive"
         binding.text4.text = "จำนวนคงเหลือ 100"
         binding.text5.text = "4,090.-"
+        binding.btn1.text="สั่งซื้อสินค้า"
         binding.btn1.setOnClickListener({
             val mAlertDialog = android.app.AlertDialog.Builder(context)
             mAlertDialog.setMessage("กดเเลือกซื้อสินค้ารายการที่ " + (p1 + 1) + " ตามลำดับรายการ")
